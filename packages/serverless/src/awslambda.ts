@@ -216,7 +216,6 @@ export function wrapHandler<TEvent, TResult>(
           })
       : (handler as AsyncHandler<typeof handler>);
 
-  // eslint-disable-next-line @sentry-internal/sdk/no-async-await
   return async (event, context) => {
     context.callbackWaitsForEmptyEventLoop = options.callbackWaitsForEmptyEventLoop;
 
