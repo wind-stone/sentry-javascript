@@ -21,4 +21,11 @@ addExtensionMethods();
 
 export { addExtensionMethods };
 
-export { extractSentrytraceData, getActiveTransaction, hasTracingEnabled, stripUrlQueryAndFragment } from './utils';
+export {
+  extractSentrytraceData,
+  extractTracestateData,
+  getActiveTransaction,
+  hasTracingEnabled,
+  SENTRY_TRACE_REGEX,
+  stripUrlQueryAndFragment,
+} from './utils';
