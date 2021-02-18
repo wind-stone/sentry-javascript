@@ -161,34 +161,6 @@ export function wrap(
 }
 
 /**
- * All properties the report dialog supports
- */
-export interface ReportDialogOptions {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-  eventId?: string;
-  dsn?: DsnLike;
-  user?: {
-    email?: string;
-    name?: string;
-  };
-  lang?: string;
-  title?: string;
-  subtitle?: string;
-  subtitle2?: string;
-  labelName?: string;
-  labelEmail?: string;
-  labelComments?: string;
-  labelClose?: string;
-  labelSubmit?: string;
-  errorGeneric?: string;
-  errorFormEntry?: string;
-  successMessage?: string;
-  /** Callback after reportDialog showed up */
-  onLoad?(): void;
-}
-
-/**
  * Injects the Report Dialog script
  * @hidden
  */
