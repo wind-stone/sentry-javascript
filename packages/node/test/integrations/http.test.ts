@@ -36,7 +36,7 @@ describe('tracing', () => {
       .reply(200);
 
     const transaction = createTransactionOnScope();
-    const spans = (transaction as Span).spanRecorder?.spans as Span[];
+    const spans = transaction.spanRecorder?.spans as Span[];
 
     http.get('http://dogs.are.great/');
 

@@ -1,9 +1,10 @@
 /* eslint-disable max-lines */
 import { getCurrentHub } from '@sentry/hub';
-import { Hub, Primitive, Span as SpanInterface, SpanContext, TraceHeaders, Transaction } from '@sentry/types';
+import { Hub, Primitive, Span as SpanInterface, SpanContext, TraceHeaders } from '@sentry/types';
 import { dropUndefinedKeys, timestampWithMs, uuid4 } from '@sentry/utils';
 
 import { SpanStatus } from './spanstatus';
+import { Transaction } from './transaction';
 import { computeTracestateValue } from './utils';
 
 /**
