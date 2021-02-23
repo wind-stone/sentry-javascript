@@ -55,7 +55,7 @@ export function tracingHandler(): (
     res: http.ServerResponse,
     next: (error?: any) => void,
   ): void {
-    // Extract data from traceheaders
+    // Extract data from trace headers
     let traceparentData, tracestateData;
     if (req.headers?.['sentry-trace']) {
       traceparentData = extractSentrytraceData(req.headers['sentry-trace'] as string);
