@@ -63,7 +63,7 @@ describe('extractSentrytraceData', () => {
   });
 });
 
-describe.only('extractTracestateData', () => {
+describe('extractTracestateData', () => {
   it.each([
     // sentry only
     ['sentry only', 'sentry=doGsaREgReaT', 'sentry=doGsaREgReaT', undefined],
