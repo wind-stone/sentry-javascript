@@ -64,11 +64,6 @@ describe('extractSentrytraceData', () => {
 });
 
 describe.only('extractTracestateData', () => {
-  // it.('correctly handles sentry-only tracestate', () => {
-  //   const result = extractTracestateData('sentry=stufff,maisey=silly');
-  //   const x = result;
-  // });
-
   it.each([
     // sentry only
     ['sentry only', 'sentry=doGsaREgReaT', 'sentry=doGsaREgReaT', undefined],
